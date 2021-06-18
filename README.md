@@ -23,5 +23,5 @@ AWS Macie has built in classifiers for common PII data (eg. SSN).
 
 The following happens after the scan:
 1. The Macie job will create some findings
-2. Eventbridge will look for findings from `aws.macie` and forward to and SNS topic
-3. A lambda function will receive a message from SNS and send a request to our preconfigure slack webhook
+2. Eventbridge will look for findings from `aws.macie` and forward to an SNS topic
+3. A lambda function will receive a message from SNS and send a request to our preconfigured slack webhook
